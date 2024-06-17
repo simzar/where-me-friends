@@ -12,7 +12,7 @@ import openInNewIcon from '../images/open_in_new.svg?raw';
 
 <Layout title="kur Simonas?">
     <a href="https://maps.app.goo.gl/3msthntw4GYQUne17" target="_blank">
-        <h1 id="top" class="text-2xl my-4 px-4 md:px-8 inline-flex items-center sm:border sm:rounded-full sm:p-4 sm:bg-gray-50 gap-2">
+        <h1 id="top" class="text-2xl m-4 inline-flex items-center border rounded-full p-4 bg-gray-50 gap-2">
             <Fragment set:html={openInNewIcon}/>
             Vytenio 50 – 450
         </h1>
@@ -20,11 +20,14 @@ import openInNewIcon from '../images/open_in_new.svg?raw';
     <Card id="step-1" title="1. Liftas">
         <Image src={elevator} alt="Liftas"/>
         <ol>
-            <li class="my-4">1. Skambinti liftui <a href="tel:+37069402140" class="sm:m-4 mx-2 inline-flex sm:border sm:rounded-full sm:p-4 sm:bg-gray-50 gap-2">
+            <li class="my-4">1. Skambinti liftui <a href="tel:+37069402140"
+                                                    class="m-4 mx-2 inline-flex border rounded-full p-4 bg-gray-50 gap-2">
                 <Fragment set:html={callIcon}/>
                 <b>+37069402140</b></a>
             </li>
-            <li class="my-4">2. Paskambinus liftas pyptels ir atsirakins išorinės durys. Atidaryti duris ir iškviesti liftą mygtuku.</li>
+            <li class="my-4">2. Paskambinus liftas pyptels ir atsirakins išorinės durys. Atidaryti duris ir iškviesti
+                liftą mygtuku.
+            </li>
             <li class="my-4">3. Pakilti į <b>4</b> aukštą.</li>
         </ol>
     </Card>
