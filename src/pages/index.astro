@@ -1,0 +1,37 @@
+---
+import {Image} from 'astro:assets'
+import Layout from '../layouts/Layout.astro';
+import liftas from '../images/liftas.png';
+import Card from '../components/Card.astro';
+import NavigationUp from '../components/NavigationUp.astro';
+---
+
+<Layout title="kur Simonas?">
+    <h1 id="top" class="text-2xl my-4 px-4 md:px-8">Vytenio 50 – 450</h1>
+    <Card id="step-1" title="1. Liftas">
+        <Image src={liftas} alt="Liftas" />
+        <ol>
+            <li class="my-4">1. Skambinti liftui <a href="tel:+37069402140"><b>+37069402140</b></a>, jis pyptels ir atsirakins.</li>
+            <li class="my-4">2. Atrakinus liftą galima atidaryti išorines duris ir iškviesti liftą.</li>
+            <li class="my-4">3. Pakilti į <b>4</b> aukštą.</li>
+        </ol>
+    </Card>
+    <Card id="step-2" title="2. Ketvirtasis aukštas">
+        <ol>
+            <li class="my-4">1. Išėjus iš lifto <b>tiesiai priešais</b> rasti ketvirto aukšto duris.</li>
+            <li class="my-4">2. Durų dešinėje suvesti kodą <b>2495#</b>, įeiti.</li>
+            <li class="my-4">3. Įėjus pro duris iškart sukti į <b>dešinę</b> ir eiti ilgu koridoriumi.</li>
+            <li class="my-4">4. Koridoriumi eiti tol, kol <b>kairėje</b> atsivers trumpesnis koridorius, kurio gale yra langas. Eiti iki lango.</li>
+            <li class="my-4">5. Atėjus iki lango, dešinėje yra dar vienos durys. Durų dešinėje mygtukas, jų atidarymui.</li>
+            <li class="my-4">6. Atidarius duris laiptais pakilti į viršų.</li>
+        </ol>
+    </Card>
+    <Card id="step-3" title="3. Penktasis aukštas">
+        <ol>
+            <li class="my-4">1. Pakilus laiptais rasti dar vienas kodines duris.</li>
+            <li class="my-4">2. Įvesti kodą <b>C4567X</b>, pasukti kodinės spynos rankenėlę, atidaryti duris.</li>
+            <li class="my-4">3. Įėjus į penktą aukštą, buto durys kairėje, su numeriu 450.</li>
+        </ol>
+    </Card>
+</Layout>
+<NavigationUp />
